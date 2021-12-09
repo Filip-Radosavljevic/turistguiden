@@ -1,0 +1,618 @@
+
+    
+*{
+
+     margin: 0;
+    
+    padding: 0;
+      
+    text-decoration: none;
+      
+    font-family:'Courier New', Courier, monospace;
+      
+      }
+
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header{
+        height: 120px;
+        background: transparent;
+        box-shadow: 0 0 10px 0 #212325;
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        z-index: 5;
+      }
+
+      .logotyp {
+         float: left;
+        padding: 12px 0;
+    }
+
+    .rubrik {
+    text-align: center;
+     margin-top: 45px;
+     color: #fff;
+     font-family:'"Courier New"', Courier, monospace;
+     font-size: 20px;
+     
+       }
+
+    .logotyp img {
+        height: 120px;
+        left: 20px;
+    }
+
+    .navigation-menu{
+
+        float: right;      
+        display: flex;    
+        align-items: center;
+        min-height: 120px;        
+      }
+    
+      .navigation-menu a{
+
+        margin-left: 10px;
+      
+        color: #ddd;
+      
+        text-transform: uppercase;
+      
+        font-size: 14px;
+      
+        padding: 12px 20px;
+      
+        border-radius: 4px;
+      
+        transition: 0.3s linear;
+      
+        
+      }
+
+      .navigation-menu a:hover{
+
+        background: #fff;
+      
+        color: #535353;
+      
+        transform: scale(1.1);
+      
+      }
+      .navigation-menu i{
+
+        margin-right: 8px;
+      
+        font-size: 16px;
+
+      
+      }
+      
+      
+      
+      
+      
+      
+      .menu-toggle-btn{
+      
+        float: right;
+      
+        height: 90px;
+      
+        line-height: 90px !important;
+      
+        color: #fff;
+      
+        font-size: 26px;
+      
+        display: none !important;
+      
+        cursor: pointer;
+
+        
+
+      
+      }
+      
+      
+      
+      
+      
+      @media screen and (max-width:700px) {
+      
+        .menu-toggle-btn{
+      
+          display: block !important;
+      
+        }
+      
+      
+      
+        .navigation-menu{
+      
+          position: absolute;
+      
+          width: 100%;
+      
+          max-width: 400px;
+      
+          background: #172b4d;
+      
+          top: 90px;
+      
+          right: 0;
+      
+          display: none;
+      
+          padding: 20px 40px;
+      
+          box-sizing: border-box;
+
+          z-index: 3;
+
+          
+      
+        }
+      
+      
+      
+        .navigation-menu::before{
+      
+          content: "";
+      
+          border-left: 10px solid transparent;
+      
+          border-right: 10px solid transparent;
+      
+          border-bottom: 10px solid #fff;
+      
+          position: absolute;
+      
+          top: -10px;
+      
+          right: 10px;
+          
+
+          
+      
+        }
+      
+      
+      
+        .navigation-menu a{
+      
+          display: block;
+      
+          margin: 10px 0;
+        
+      
+        }
+      
+      
+      
+        .navigation-menu.active{
+      
+          display: block;
+
+          background-color: #fff;
+
+        
+      
+        }
+      
+      }
+      
+  
+    #afrika {
+        padding: 20px 60px;
+        position: absolute;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;;
+        left: 50%;
+        top: 50%;
+        transition: all 200ms ease-in-out;
+        font-size: 40px;
+        font-weight: bold;
+        transform: translateX(-50%);
+        z-index: 1;
+        border: 6px inset #fff;
+        color: white;
+       
+        
+    }
+
+    #bakgrundenafrika {
+        background-image: url('avrika2.jpg');
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        z-index: -1;
+        background-size: cover;
+        animation: animate 12s ease-in-out infinite;
+       
+
+     
+    }
+
+    @keyframes animate {
+      0%, 100% {background-image: url(avrika2.jpg);}
+  
+      25% {background-image: url(afrika99.jpg);}
+  
+      50% {background-image: url(afrika76.jpg);}
+  
+      75% {background-image: url(afrika58.jpg);}
+      }
+  
+
+
+    #afrika:hover {
+      background: rgb(180,58,58);
+      background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(255,84,0,1) 0%, rgba(252,205,69,1) 100%);      
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+        
+    }
+    
+    #antarktis {
+      padding: 20px 60px;
+      position: absolute;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0);
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 70px;;
+      left: 50%;
+      top: 150%;
+      transition: all 200ms ease-in-out;
+      font-size: 40px;
+      font-weight: bold;
+      transform: translateX(-50%);
+      z-index: 5;
+      border: 6px inset #fff;
+      color: white;
+
+    }
+
+    #antarktis:hover {
+        background: #4b4b4b;
+
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+    }
+    
+    #asien:hover {
+        background: red;
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+    }
+    
+
+    #bakgrundenantarktis {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-image: url('nekom.jpg');
+    filter: brightness(100%);
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    background-size: cover;
+    animation: fade 10s ease-in-out infinite;
+    }
+    @keyframes fade {
+      0%, 100%{
+          background-image: url(nekom.jpg);
+      }
+  
+      33% {
+          background-image: url(antarktis2.jpg);
+      }
+  
+      67% {
+          background-image: url(antarktis3.jpg);
+      }
+  
+  }
+
+
+
+    @keyframes slide {
+      0%, 100%{
+          background-image: url(1989873.jpg);
+      }
+  
+      25% {
+          background-image: url(asien2.jpg);
+      }
+  
+      50% {
+          background-image: url(asien3.jpg);
+      }
+  
+      75% {
+          background-image: url(asia5.jpg);
+      }
+  }
+    #asien {
+      padding: 20px 60px;
+      position: absolute;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0);
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 70px;;
+      left: 50%;
+      top: 250%;
+      transition: all 200ms ease-in-out;
+      font-size: 40px;
+      font-weight: bold;
+      transform: translateX(-50%);
+      z-index: 5;
+      border: 6px inset #fff;
+      color: white;
+
+    }
+
+    #bakgrundenasien {
+    width: 100%;
+    height: 100%;
+    top: 200%;
+    background-image: url('1989873.jpg');
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    background-size: cover;
+    animation: slide 12s ease-in-out infinite;
+    }
+
+    #europa {
+      padding: 20px 60px;
+      position: absolute;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0);
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 70px;;
+      left: 50%;
+      top: 350%;
+      transition: all 200ms ease-in-out;
+      font-size: 40px;
+      font-weight: bold;
+      transform: translateX(-50%);
+      z-index: 5;
+      border: 6px inset #fff;
+      color: white;
+    }
+
+    #bakgrundeneuropa {
+
+        width: 100%;
+        height: 100%;
+        top: 300%;
+        background-image: url('europa1.jpg');
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+        animation: vfx 10s ease-in-out infinite;
+    }
+
+    @keyframes vfx {
+      0%, 100%{
+          background-image: url(europa1.jpg);
+      }
+  
+      25% {
+          background-image: url(europa2.jpg);
+      }
+  
+      50% {
+          background-image: url(europa3.jpg);
+      }
+  
+      75% {
+          background-image: url(eruopa4.jpg);
+      }
+  }
+
+    #europa:hover {
+      background: #36d;
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+    }
+
+
+
+      #nordamerika {
+        padding: 20px 60px;
+        position: absolute;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;;
+        left: 50%;
+        top: 450%;
+        transition: all 200ms ease-in-out;
+        font-size: 40px;
+        font-weight: bold;
+        transform: translateX(-50%);
+        z-index: 5;
+        border: 6px inset #fff;
+        color: white;
+      }
+
+      #bakgrundenna {
+        width: 100%;
+        height: 100%;
+        top: 400%;
+        background-image: url('nordame1.jpg');
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+        animation: vfx1 10s ease-in-out infinite;
+    
+
+      }
+      @keyframes vfx1 {
+        0%, 100%{
+            background-image: url(nordame1.jpg);
+        }
+    
+        33% {
+            background-image: url(nordame2.jpg);
+        }
+    
+        67% {
+            background-image: url(nordame3.jpg);
+        }
+  
+    }
+
+
+
+      #nordamerika:hover {
+        background: rgb(17,129,254);
+        background: linear-gradient(90deg, rgba(17,129,254,1) 0%, rgba(1,37,99,1) 86%, rgba(9,39,109,1) 100%);
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+      }
+
+      #oceanien {
+        padding: 20px 60px;
+        position: absolute;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;;
+        left: 50%;
+        top: 550%;
+        transition: all 200ms ease-in-out;
+        font-size: 40px;
+        font-weight: bold;
+        transform: translateX(-50%);
+        z-index: 5;
+        border: 6px inset #fff;
+        color: white;
+      }
+
+      #bakgrundenoceanien {
+        width: 100%;
+        height: 100%;
+        top: 500%;
+        background-image: url('oceanien.jpg');
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+        animation: power 10s ease-in-out infinite;
+      }
+
+      @keyframes power {
+        0%, 100%{
+            background-image: url(oceanien.jpg);
+        }
+    
+        33% {
+            background-image: url(sydame3.jpg);
+        }
+    
+        67% {
+            background-image: url(sydame2.jpg);
+        }
+  
+    }
+
+
+      #oceanien:hover {
+        background: lightseagreen;
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+      }
+
+      #sydamerika {
+        padding: 20px 60px;
+        position: absolute;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;;
+        left: 50%;
+        top: 650%;
+        transition: all 200ms ease-in-out;
+        font-size: 40px;
+        font-weight: bold;
+        transform: translateX(-50%);
+        z-index: 5;
+        border: 6px inset #fff;
+        color: white;
+      }
+
+      #bakgrundensa {
+        width: 100%;
+        height: 100%;
+        top: 600%;
+        background-image: url('sydamerika.jpg');
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+        animation: south 10s ease-in-out infinite;
+      }
+
+      @keyframes south {
+        0%, 100%{
+            background-image: url(sydamerika.jpg);
+        }
+    
+        33% {
+            background-image: url(p02gg8vv.jpg);
+        }
+    
+        67% {
+            background-image: url(rio.jpg);
+        }
+  
+    }
+
+
+      #sydamerika:hover {
+        background: #048243 ;
+        box-shadow: 0 0 5px 0 #0005;
+        font-size: 44px;
+
+      }
+
+
+    
+      #copyright{
+        background: #000;
+       
+        padding: 10px;
+        
+        margin-top: 333%;
+        height: 90px;
+
+      }
+
+      #copyright h3 {
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+        margin-bottom: 0%;
+      }
+      #copyright p {
+        color: #fff;
+        left: 20px;
+      }
+
+
+
+
+    
